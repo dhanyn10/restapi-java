@@ -2,19 +2,18 @@ package com.test.users.shared.dto;
 
 import java.io.Serializable;
 
-public class UserDto implements Serializable{
-	
+public class UserDto implements Serializable {
+
 	private static final long serialVersionUID = -5453927472428408094L;
 	private long id;
 	private String userId;
 	private String firstName;
-	private String lastname;
+	private String lastName;
 	private String email;
 	private String password;
-	private String encryptedpassword;
+	private String encryptedPassword;
 	private String emailVerifycationToken;
 	private Boolean emailVerificationStatus = false;
-	
 	public long getId() {
 		return id;
 	}
@@ -33,11 +32,11 @@ public class UserDto implements Serializable{
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-	public String getLastname() {
-		return lastname;
+	public String getLastName() {
+		return lastName;
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 	public String getEmail() {
 		return email;
@@ -51,11 +50,11 @@ public class UserDto implements Serializable{
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getEncryptedpassword() {
-		return encryptedpassword;
+	public String getEncryptedPassword() {
+		return encryptedPassword;
 	}
-	public void setEncryptedpassword(String encryptedpassword) {
-		this.encryptedpassword = encryptedpassword;
+	public void setEncryptedPassword(String encryptedPassword) {
+		this.encryptedPassword = encryptedPassword;
 	}
 	public String getEmailVerifycationToken() {
 		return emailVerifycationToken;
@@ -69,5 +68,5 @@ public class UserDto implements Serializable{
 	public void setEmailVerificationStatus(Boolean emailVerificationStatus) {
 		this.emailVerificationStatus = emailVerificationStatus;
 	}
-	
+
 }
